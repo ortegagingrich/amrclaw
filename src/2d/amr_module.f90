@@ -121,6 +121,9 @@ module amr_module
     real(kind=8) timeValoutCPU
 
     integer lentot,lenmax,lendim
+    
+    !just for hybrid tests: for counting number of riemann solves
+    integer :: roe_solves, full_solves, retry_solves, total_solves
 
     ! ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     ! :::::  method parameters
