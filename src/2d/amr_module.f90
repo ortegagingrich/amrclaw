@@ -122,6 +122,12 @@ module amr_module
 
     integer lentot,lenmax,lendim
     
+    ! ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ! :::::  Hybrid Riemann solver parameters
+    ! ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    
+    real(kind=8) roe_depth_frac, roe_min_depth, roe_mom_rat
+    
     !just for hybrid tests: for counting number of riemann solves
     integer :: roe_solves, full_solves, retry_solves, total_solves
 
